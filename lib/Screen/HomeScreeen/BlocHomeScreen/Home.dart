@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../BasicPage.dart';
+import '../NavigationBar/Navigation.dart';
 import 'BlocHome.dart';
 import 'EventsHome.dart';
 
@@ -32,14 +33,21 @@ class Home extends StatelessWidget {
   Widget _buildPhoneLayout() {
     return const Scaffold(
       body: SafeArea(
-          child: basicPage(
-        widthIcon: 30,
-        heightIcon: 30,
-        heightItemList: 90,
-        profileImageWidth: 64,
-        profileImageHeight: 64,
+          child: Stack(children: [
+        basicPage(
+          widthIcon: 30,
+          heightIcon: 30,
+          heightItemList: 90,
+          profileImageWidth: 64,
+          profileImageHeight: 64,
+        ),
+            Positioned(
+              bottom: 0,
+                left: 0,
+                right: 0,
 
-      )),
+                child: Navigation())
+      ])),
     );
   }
 
@@ -52,7 +60,6 @@ class Home extends StatelessWidget {
         heightItemList: 100,
         profileImageWidth: 68,
         profileImageHeight: 68,
-
       )),
     );
   }
@@ -66,7 +73,6 @@ class Home extends StatelessWidget {
         heightItemList: 110,
         profileImageWidth: 72,
         profileImageHeight: 72,
-
       )),
     );
   }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Screen/HomeScreeen/BlocHomeScreen/Home.dart';
+import 'Splash/SplashScreen.dart';
+import 'gen/fonts.gen.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -47,8 +49,16 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'Avenir', color: secondTextColor, fontSize: 20),
               titleSmall: TextStyle(
                 fontFamily: 'Avenir',
-              ))),
-      home: const Home(),
+              ),
+            bodySmall: TextStyle(
+                fontFamily: FontFamily.avenir,
+                fontWeight: FontWeight.w500,
+                color: Color(0xff7B8BB2),
+                 
+                fontSize: 8),
+          )),
+
+      home: const SplashScreen(),
     );
   }
 }

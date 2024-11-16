@@ -12,6 +12,16 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/Icons/Articles.png
+  AssetGenImage get articles =>
+      const AssetGenImage('assets/Icons/Articles.png');
+
+  /// File path: assets/Icons/Home.png
+  AssetGenImage get home => const AssetGenImage('assets/Icons/Home.png');
+
+  /// File path: assets/Icons/Menu.png
+  AssetGenImage get menu => const AssetGenImage('assets/Icons/Menu.png');
+
   /// File path: assets/Icons/category_1.png
   AssetGenImage get category1 =>
       const AssetGenImage('assets/Icons/category_1.png');
@@ -32,9 +42,25 @@ class $AssetsIconsGen {
   AssetGenImage get notification =>
       const AssetGenImage('assets/Icons/notification.png');
 
+  /// File path: assets/Icons/plus.png
+  AssetGenImage get plus => const AssetGenImage('assets/Icons/plus.png');
+
+  /// File path: assets/Icons/search.png
+  AssetGenImage get search => const AssetGenImage('assets/Icons/search.png');
+
   /// List of all assets
-  List<AssetGenImage> get values =>
-      [category1, category2, category3, category4, notification];
+  List<AssetGenImage> get values => [
+        articles,
+        home,
+        menu,
+        category1,
+        category2,
+        category3,
+        category4,
+        notification,
+        plus,
+        search
+      ];
 }
 
 class $AssetsImagesGen {
@@ -49,6 +75,16 @@ class $AssetsImagesGen {
 
   /// Directory path: assets/Images/stories
   $AssetsImagesStoriesGen get stories => const $AssetsImagesStoriesGen();
+}
+
+class $AssetsLogoGen {
+  const $AssetsLogoGen();
+
+  /// File path: assets/logo/splash.png
+  AssetGenImage get splash => const AssetGenImage('assets/logo/splash.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [splash];
 }
 
 class $AssetsImagesImagesStoryGen {
@@ -67,6 +103,9 @@ class $AssetsImagesPostsGen {
 
   /// Directory path: assets/Images/posts/large
   $AssetsImagesPostsLargeGen get large => const $AssetsImagesPostsLargeGen();
+
+  /// Directory path: assets/Images/posts/small
+  $AssetsImagesPostsSmallGen get small => const $AssetsImagesPostsSmallGen();
 }
 
 class $AssetsImagesStoriesGen {
@@ -141,11 +180,36 @@ class $AssetsImagesPostsLargeGen {
       [largePost1, largePost2, largePost3, largePost4, largePost5, largePost6];
 }
 
+class $AssetsImagesPostsSmallGen {
+  const $AssetsImagesPostsSmallGen();
+
+  /// File path: assets/Images/posts/small/small_post_1.jpg
+  AssetGenImage get smallPost1 =>
+      const AssetGenImage('assets/Images/posts/small/small_post_1.jpg');
+
+  /// File path: assets/Images/posts/small/small_post_2.jpg
+  AssetGenImage get smallPost2 =>
+      const AssetGenImage('assets/Images/posts/small/small_post_2.jpg');
+
+  /// File path: assets/Images/posts/small/small_post_3.jpg
+  AssetGenImage get smallPost3 =>
+      const AssetGenImage('assets/Images/posts/small/small_post_3.jpg');
+
+  /// File path: assets/Images/posts/small/small_post_4.jpg
+  AssetGenImage get smallPost4 =>
+      const AssetGenImage('assets/Images/posts/small/small_post_4.jpg');
+
+  /// List of all assets
+  List<AssetGenImage> get values =>
+      [smallPost1, smallPost2, smallPost3, smallPost4];
+}
+
 class Assets {
   Assets._();
 
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsLogoGen logo = $AssetsLogoGen();
 }
 
 class AssetGenImage {
