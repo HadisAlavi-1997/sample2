@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'Avenir', color: secondTextColor, fontSize: 20),
               titleSmall: TextStyle(
                 fontFamily: 'Avenir',
-<<<<<<< HEAD
+ 
               ),
             bodySmall: TextStyle(
                 fontFamily: FontFamily.avenir,
@@ -60,11 +60,11 @@ class MyApp extends StatelessWidget {
           )),
 
       home: const SplashScreen(),
-=======
+ 
               ))),
       home: const Home(),
-      //milad
->>>>>>> 3698dcb429b3bc133d48382f20d80c85a3ddb146
+      
+ 
     );
   }
 }
