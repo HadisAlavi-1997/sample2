@@ -59,7 +59,6 @@ class MyApp extends StatelessWidget {
                 fontSize: 8),
           )),
       home: const SplashScreen(),
-//mjj
     );
   }
 }
