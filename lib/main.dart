@@ -60,8 +60,8 @@ class MyApp extends StatelessWidget {
           )),
 
       home: const SplashScreen(),
-      //alavi
- 
+     
+ //jj
               );
 
   }
