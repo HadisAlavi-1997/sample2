@@ -247,6 +247,9 @@ flutter:
     - assets/Icons/Home.png
     - assets/Icons/Menu.png
     - assets/Icons/Articles.png
+    - assets/Icons/Google.png
+    - assets/Icons/Facebook.png
+    - assets/Icons/Twitter.png
     - assets/Images/ImagesStory/hadis.jpg
     - assets/Images/stories/story_1.jpg
     - assets/Images/stories/story_2.jpg
@@ -266,6 +269,8 @@ flutter:
     - assets/Images/posts/small/small_post_2.jpg
     - assets/Images/posts/small/small_post_3.jpg
     - assets/Images/posts/small/small_post_4.jpg
+    - assets/Images/login/userlogo.png
+    - assets/logo/splash.png
     - assets/logo/splash.png
 
 

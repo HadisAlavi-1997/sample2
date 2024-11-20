@@ -16,11 +16,21 @@ class $AssetsIconsGen {
   AssetGenImage get articles =>
       const AssetGenImage('assets/Icons/Articles.png');
 
+  /// File path: assets/Icons/Facebook.png
+  AssetGenImage get facebook =>
+      const AssetGenImage('assets/Icons/Facebook.png');
+
+  /// File path: assets/Icons/Google.png
+  AssetGenImage get google => const AssetGenImage('assets/Icons/Google.png');
+
   /// File path: assets/Icons/Home.png
   AssetGenImage get home => const AssetGenImage('assets/Icons/Home.png');
 
   /// File path: assets/Icons/Menu.png
   AssetGenImage get menu => const AssetGenImage('assets/Icons/Menu.png');
+
+  /// File path: assets/Icons/Twitter.png
+  AssetGenImage get twitter => const AssetGenImage('assets/Icons/Twitter.png');
 
   /// File path: assets/Icons/category_1.png
   AssetGenImage get category1 =>
@@ -51,8 +61,11 @@ class $AssetsIconsGen {
   /// List of all assets
   List<AssetGenImage> get values => [
         articles,
+        facebook,
+        google,
         home,
         menu,
+        twitter,
         category1,
         category2,
         category3,
@@ -69,6 +82,9 @@ class $AssetsImagesGen {
   /// Directory path: assets/Images/ImagesStory
   $AssetsImagesImagesStoryGen get imagesStory =>
       const $AssetsImagesImagesStoryGen();
+
+  /// Directory path: assets/Images/login
+  $AssetsImagesLoginGen get login => const $AssetsImagesLoginGen();
 
   /// Directory path: assets/Images/posts
   $AssetsImagesPostsGen get posts => const $AssetsImagesPostsGen();
@@ -96,6 +112,17 @@ class $AssetsImagesImagesStoryGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [hadis];
+}
+
+class $AssetsImagesLoginGen {
+  const $AssetsImagesLoginGen();
+
+  /// File path: assets/Images/login/userlogo.png
+  AssetGenImage get userlogo =>
+      const AssetGenImage('assets/Images/login/userlogo.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [userlogo];
 }
 
 class $AssetsImagesPostsGen {

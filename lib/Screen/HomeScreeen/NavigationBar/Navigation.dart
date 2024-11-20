@@ -29,26 +29,26 @@ class Navigation extends StatelessWidget {
                     Column(
                       children: [
 
-                        Assets.icons.home.image(),
+                        Assets.icons.home.image(width: 25,height: 25),
                         Text("Home",style:themeData.textTheme.bodySmall ,),
                       ],
                     ), Column(
                       children: [
 
-                        Assets.icons.articles.image(),
+                        Assets.icons.articles.image(width: 25,height: 25),
                         Text("Article",style:themeData.textTheme.bodySmall ,),
                       ],
                     ),SizedBox(width: 20,),
                     Column(
                       children: [
 
-                        Assets.icons.search.image(),
+                        Assets.icons.search.image(width: 25,height: 25),
                         Text("Search",style:themeData.textTheme.bodySmall ,),
                       ],
                     ), Column(
                       children: [
 
-                        Assets.icons.menu.image(),
+                        Assets.icons.menu.image(width: 25,height: 25),
                         Text("Menu",style:themeData.textTheme.bodySmall ,),
                       ],
                     )

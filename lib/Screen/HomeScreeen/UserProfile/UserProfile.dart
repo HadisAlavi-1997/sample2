@@ -36,6 +36,7 @@ class Userprofile extends StatelessWidget {
           }
 
           return Column(
+
             children: [
               Stack(
                 children: [

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import '../../Menu/Menu.dart';
 import '../BasicPage.dart';
 import '../NavigationBar/Navigation.dart';
 import 'BlocHome.dart';
@@ -31,7 +32,7 @@ class Home extends StatelessWidget {
   }
 
   Widget _buildPhoneLayout() {
-    return const Scaffold(
+    return  Scaffold(
       body: SafeArea(
           child: Stack(children: [
         basicPage(
@@ -52,28 +53,47 @@ class Home extends StatelessWidget {
   }
 
   Widget _buildTabletLayout() {
-    return const Scaffold(
+    return  Scaffold(
       body: SafeArea(
-          child: basicPage(
-        widthIcon: 40,
-        heightIcon: 40,
-        heightItemList: 100,
-        profileImageWidth: 68,
-        profileImageHeight: 68,
-      )),
+          child: Stack(
+            children: [basicPage(
+                    widthIcon: 40,
+                    heightIcon: 40,
+                    heightItemList: 100,
+                    profileImageWidth: 68,
+                    profileImageHeight: 68,
+                  ),
+              Positioned(
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+
+                  child: Navigation())
+            ]
+          )),
     );
   }
 
   Widget _buildDesktopLayout() {
-    return const Scaffold(
-      body: SafeArea(
-          child: basicPage(
-        widthIcon: 50,
-        heightIcon: 50,
-        heightItemList: 110,
-        profileImageWidth: 72,
-        profileImageHeight: 72,
-      )),
-    );
+  return Scaffold(
+    body: SafeArea(
+        child: Stack(
+            children: [basicPage(
+              widthIcon: 40,
+              heightIcon: 40,
+              heightItemList: 100,
+              profileImageWidth: 68,
+              profileImageHeight: 68,
+            ),
+              Positioned(
+                  top: 0,
+                  left: 0,
+
+                  child: HoverMenu(),)
+            ]
+        )),
+  );
+
+
   }
 }

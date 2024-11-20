@@ -32,12 +32,14 @@ class basicPage extends StatelessWidget {
     final ThemeData themeData = Theme.of(context);
     final width = MediaQuery.of(context).size.width;
     return  SingleChildScrollView(
+
     physics: const BouncingScrollPhysics(),
       child: Column(
+
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.fromLTRB(32, 16, 32, 0),
+            padding: const EdgeInsets.fromLTRB(32, 50, 32, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -103,12 +105,16 @@ Widget _listProfileUser(heightItemList, profileImageWidth, profileImageHeight) {
         itemCount: stories.length,
         itemBuilder: (context, index) {
           final story = stories[index];
-          return Userprofile(
-            images: story.imageFileName,
-            icon: story.iconFileName,
-            name: story.name,
-            profileImageWidth: profileImageWidth,
-            profileImageHeight: profileImageHeight,
+          return Padding(
+
+            padding: EdgeInsets.fromLTRB(32, 0, 0, 0),
+            child: Userprofile(
+              images: story.imageFileName,
+              icon: story.iconFileName,
+              name: story.name,
+              profileImageWidth: profileImageWidth,
+              profileImageHeight: profileImageHeight,
+            ),
           );
         },
       ),
