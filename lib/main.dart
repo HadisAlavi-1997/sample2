@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Screen/Article/Article.dart';
 import 'Splash/SplashScreen.dart';
 import 'gen/fonts.gen.dart';
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
     const primaryTextColor = Color(0xff0D253C);
     const secondTextColor = Color(0xff5b6580);
     const primaryColor = Color(0xff376AED);
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
@@ -39,7 +41,7 @@ class MyApp extends StatelessWidget {
                 color: primaryTextColor,
                 fontSize: 20),
             titleLarge: TextStyle(
-                fontFamily: 'Avenir', color: secondTextColor, fontSize: 20),
+                fontFamily: 'Avenir', color: primaryTextColor, fontSize: 20,fontWeight:FontWeight.w700),
             titleSmall: TextStyle(
               fontFamily: 'Avenir',
             ),
@@ -50,13 +52,21 @@ class MyApp extends StatelessWidget {
                 fontSize: 8),
           ),
         colorScheme: const ColorScheme.light(
+          background: Color(0xffFBFCFF),
+            surface: Colors.white,
             primary:  primaryColor,
             onBackground: primaryTextColor),
+        appBarTheme: const AppBarTheme(
+          titleSpacing: 32,// Distance from the left page
+          color:Colors.white,
+          foregroundColor:primaryTextColor,
+
+        ),
         useMaterial3: true,
       ),
 
 
-      home: const SplashScreen(),
+      home: const ArticleScreen(),
 
     );
   }

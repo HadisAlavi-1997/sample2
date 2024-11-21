@@ -250,6 +250,7 @@ flutter:
     - assets/Icons/Google.png
     - assets/Icons/Facebook.png
     - assets/Icons/Twitter.png
+    - assets/Icons/thumbsup.png
     - assets/Images/ImagesStory/hadis.jpg
     - assets/Images/stories/story_1.jpg
     - assets/Images/stories/story_2.jpg
@@ -272,6 +273,7 @@ flutter:
     - assets/Images/login/userlogo.png
     - assets/logo/splash.png
     - assets/logo/splash.png
+    - assets/Images/SinglePost/SP1.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

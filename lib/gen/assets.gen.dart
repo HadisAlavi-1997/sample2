@@ -58,6 +58,10 @@ class $AssetsIconsGen {
   /// File path: assets/Icons/search.png
   AssetGenImage get search => const AssetGenImage('assets/Icons/search.png');
 
+  /// File path: assets/Icons/thumbsup.png
+  AssetGenImage get thumbsup =>
+      const AssetGenImage('assets/Icons/thumbsup.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
         articles,
@@ -72,7 +76,8 @@ class $AssetsIconsGen {
         category4,
         notification,
         plus,
-        search
+        search,
+        thumbsup
       ];
 }
 
@@ -82,6 +87,10 @@ class $AssetsImagesGen {
   /// Directory path: assets/Images/ImagesStory
   $AssetsImagesImagesStoryGen get imagesStory =>
       const $AssetsImagesImagesStoryGen();
+
+  /// Directory path: assets/Images/SinglePost
+  $AssetsImagesSinglePostGen get singlePost =>
+      const $AssetsImagesSinglePostGen();
 
   /// Directory path: assets/Images/login
   $AssetsImagesLoginGen get login => const $AssetsImagesLoginGen();
@@ -112,6 +121,17 @@ class $AssetsImagesImagesStoryGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [hadis];
+}
+
+class $AssetsImagesSinglePostGen {
+  const $AssetsImagesSinglePostGen();
+
+  /// File path: assets/Images/SinglePost/SP1.jpg
+  AssetGenImage get sp1 =>
+      const AssetGenImage('assets/Images/SinglePost/SP1.jpg');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [sp1];
 }
 
 class $AssetsImagesLoginGen {
