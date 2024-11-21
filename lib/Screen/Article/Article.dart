@@ -53,7 +53,7 @@ class ArticleScreen extends StatelessWidget {
       body: Center(
         child: Container(
         
-          width: (width > 600) ? 600.0 : width,
+          width: (width > 330) ? 600.0 : width,
           child: Stack(
             children: [
               CustomScrollView(

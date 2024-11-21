@@ -251,6 +251,8 @@ flutter:
     - assets/Icons/Facebook.png
     - assets/Icons/Twitter.png
     - assets/Icons/thumbsup.png
+    - assets/Icons/grid.png
+    - assets/Icons/table.png
     - assets/Images/ImagesStory/hadis.jpg
     - assets/Images/stories/story_1.jpg
     - assets/Images/stories/story_2.jpg

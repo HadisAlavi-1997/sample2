@@ -12,7 +12,9 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final themeData = Theme.of(context);
     return Scaffold(
+      backgroundColor:themeData.colorScheme.surface ,
         body: BlocProvider<BlocHome>(
       create: (BuildContext context) =>
           BlocHome()..add(StartHome()), // ارسال رویداد آغاز

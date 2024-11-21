@@ -74,7 +74,7 @@ class basicPage extends StatelessWidget {
                     profileImageHeight,
                   ),
                   _listCategory(categories, themeData),
-                  _postList(themeData ,width ),
+                  Posts(themeData: themeData, width: width, lable: "LatestNews", option: true,),
                   const SizedBox(height: 30,)
                 ],
               );
@@ -206,29 +206,4 @@ Widget _listCategory(categories, themeData) {
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
-Widget _postList(ThemeData themeData,width) {
-  return Builder(builder: (context) {
 
-    final post = AppDatabase.posts;
-    return Column(children: [
-      Padding(
-        padding: EdgeInsets.fromLTRB(32, 10, 24, 10),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center, //تراز میکنه
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              "LatestNews",
-              style: themeData.textTheme.bodyLarge,
-            ),
-            TextButton(
-                onPressed: () {},
-                child: const Text("More",
-                    style: TextStyle(color: Color(0xff376AED))))
-          ],
-        ),
-      ),
-      Posts(post: post, themeData: themeData, width: width)
-    ]);
-  });
-}

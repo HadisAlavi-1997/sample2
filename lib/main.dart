@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Screen/Article/Article.dart';
+import 'Screen/HomeScreeen/BlocHomeScreen/Home.dart';
+import 'Screen/ProfileScreen/Profile.dart';
 import 'Splash/SplashScreen.dart';
 import 'gen/fonts.gen.dart';
 
@@ -66,7 +68,7 @@ class MyApp extends StatelessWidget {
       ),
 
 
-      home: const ArticleScreen(),
+      home: const ProfileScreen(),
 
     );
   }

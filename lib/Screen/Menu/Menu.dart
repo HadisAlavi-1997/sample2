@@ -31,28 +31,29 @@ class _HoverMenuState extends State<HoverMenu> {
         height: _isHovered ? 120 : 50,
         decoration: const BoxDecoration(
           color: Color(0xffdfe3ea),
-          boxShadow: [
-            BoxShadow(blurRadius: 3, color: Color(0xaa0D253C)),
-          ],
+          // boxShadow: [
+          //   BoxShadow(blurRadius: 3, color: Color(0xaa0D253C)),
+          // ],
         ),
         child: Row(
           children: [
             // فقط در حالت hover سه ویجت نمایش داده می‌شود
-             const Expanded(child: PopUpMenu()),
-            if (_isHovered)  Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(45.0),
-                  child:Assets.icons.home.image()
-                )),
-            if (_isHovered)  Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(45.0),
-                  child:Assets.icons.search.image()
-                )),if (_isHovered)  Expanded(
-                child: Padding(
-                    padding: const EdgeInsets.all(45.0),
-                    child:Assets.icons.articles.image()
-                )),
+            const Expanded(child: PopUpMenu()),
+            if (_isHovered)
+              Expanded(
+                  child: Padding(
+                      padding: const EdgeInsets.all(45.0),
+                      child: Assets.icons.home.image())),
+            if (_isHovered)
+              Expanded(
+                  child: Padding(
+                      padding: const EdgeInsets.all(45.0),
+                      child: Assets.icons.search.image())),
+            if (_isHovered)
+              Expanded(
+                  child: Padding(
+                      padding: const EdgeInsets.all(45.0),
+                      child: Assets.icons.articles.image())),
           ],
         ),
       ),
@@ -85,6 +86,7 @@ class _PopUpMenuState extends State<PopUpMenu> {
         }
       });
     }
+
     searchForGestureDetector(popUpButtonKey.currentContext!);
     detector!.onTap!();
   }
@@ -109,9 +111,9 @@ class _PopUpMenuState extends State<PopUpMenu> {
                 PopupMenuItem(
                   child: ListTile(
                     title: InkWell(
-                      onTap: (){
-                        Navigator.of(context)
-                            .pushReplacement(MaterialPageRoute(builder: (context) => const LoginResponsive   ()));
+                      onTap: () {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (context) => const LoginResponsive()));
                       },
                       child: const Text(
                         'Login',

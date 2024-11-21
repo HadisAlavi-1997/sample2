@@ -48,6 +48,9 @@ class $AssetsIconsGen {
   AssetGenImage get category4 =>
       const AssetGenImage('assets/Icons/category_4.png');
 
+  /// File path: assets/Icons/grid.png
+  AssetGenImage get grid => const AssetGenImage('assets/Icons/grid.png');
+
   /// File path: assets/Icons/notification.png
   AssetGenImage get notification =>
       const AssetGenImage('assets/Icons/notification.png');
@@ -57,6 +60,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/Icons/search.png
   AssetGenImage get search => const AssetGenImage('assets/Icons/search.png');
+
+  /// File path: assets/Icons/table.png
+  AssetGenImage get table => const AssetGenImage('assets/Icons/table.png');
 
   /// File path: assets/Icons/thumbsup.png
   AssetGenImage get thumbsup =>
@@ -74,9 +80,11 @@ class $AssetsIconsGen {
         category2,
         category3,
         category4,
+        grid,
         notification,
         plus,
         search,
+        table,
         thumbsup
       ];
 }
