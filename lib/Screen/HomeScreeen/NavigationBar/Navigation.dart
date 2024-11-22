@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../gen/assets.gen.dart';
+import '../../Article/Article.dart';
+import '../BlocHomeScreen/Home.dart';
 
 class Navigation extends StatelessWidget {
   const Navigation({super.key});
@@ -29,13 +31,23 @@ class Navigation extends StatelessWidget {
                     Column(
                       children: [
 
-                        Assets.icons.home.image(width: 25,height: 25),
+                        InkWell(
+                            onTap: (){
+                              Navigator.of(context)
+                                  .pushReplacement(MaterialPageRoute(builder: (context) => const Home()));
+                            },
+                            child: Assets.icons.home.image(width: 25,height: 25)),
                         Text("Home",style:themeData.textTheme.bodySmall ,),
                       ],
                     ), Column(
                       children: [
 
-                        Assets.icons.articles.image(width: 25,height: 25),
+                        InkWell(
+                            onTap: (){
+                              Navigator.of(context)
+                                  .pushReplacement(MaterialPageRoute(builder: (context) => const ArticleScreen()));
+                            },
+                            child: Assets.icons.articles.image(width: 25,height: 25)),
                         Text("Article",style:themeData.textTheme.bodySmall ,),
                       ],
                     ),SizedBox(width: 20,),

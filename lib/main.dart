@@ -68,7 +68,7 @@ class MyApp extends StatelessWidget {
       ),
 
 
-      home: const ProfileScreen(),
+      home: const Home(),
 
     );
   }

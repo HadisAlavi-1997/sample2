@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:myrezome/Screen/Article/Article.dart';
 
 import '../../gen/assets.gen.dart';
 import '../Auth/login.dart';
+import '../HomeScreeen/BlocHomeScreen/Home.dart';
 
 class HoverMenu extends StatefulWidget {
   @override
@@ -40,20 +42,38 @@ class _HoverMenuState extends State<HoverMenu> {
             // فقط در حالت hover سه ویجت نمایش داده می‌شود
             const Expanded(child: PopUpMenu()),
             if (_isHovered)
-              Expanded(
-                  child: Padding(
-                      padding: const EdgeInsets.all(45.0),
-                      child: Assets.icons.home.image())),
+              InkWell(
+                onTap: (){
+                  Navigator.of(context)
+                      .pushReplacement(MaterialPageRoute(builder: (context) => const Home()));
+                },
+                child: Expanded(
+                    child: Padding(
+                        padding: const EdgeInsets.all(45.0),
+                        child: Assets.icons.home.image())),
+              ),
             if (_isHovered)
-              Expanded(
-                  child: Padding(
-                      padding: const EdgeInsets.all(45.0),
-                      child: Assets.icons.search.image())),
+              InkWell(
+                onTap: (){
+                  Navigator.of(context)
+                      .pushReplacement(MaterialPageRoute(builder: (context) => const Home()));
+                },
+                child: Expanded(
+                    child: Padding(
+                        padding: const EdgeInsets.all(45.0),
+                        child: Assets.icons.search.image())),
+              ),
             if (_isHovered)
-              Expanded(
-                  child: Padding(
-                      padding: const EdgeInsets.all(45.0),
-                      child: Assets.icons.articles.image())),
+              InkWell(
+                onTap: (){
+                  Navigator.of(context)
+                      .pushReplacement(MaterialPageRoute(builder: (context) => const ArticleScreen()));
+                },
+                child: Expanded(
+                    child: Padding(
+                        padding: const EdgeInsets.all(45.0),
+                        child: Assets.icons.articles.image())),
+              ),
           ],
         ),
       ),
